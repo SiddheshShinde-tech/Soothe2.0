@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+.homepage-img-div{
+    padding-bottom: 15rem;
+    padding-top: 1rem;
+}
+.homepage-asses-div{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 5rem;
+}
+.assess-head-p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #285A84;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: normal ;
+
+
+    
+}
+.assess-desc{
+    margin-top: 2rem;
+}
+.assess-desc-p{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgba(4, 120, 87);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 1.9rem ;
+}
+#patienthomepage-btn{
+    background-color: #85C872;
+}
