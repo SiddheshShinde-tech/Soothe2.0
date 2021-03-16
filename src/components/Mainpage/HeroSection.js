@@ -11,6 +11,7 @@ import xyz from '../../assets/xyz.jpg'
 import halflogo from '../../assets/halflogo.jpeg'
 import selftrack from '../../assets/selftrack.jpg'
 import './herosection.css'
+import {Link} from 'react-router-dom'
 
 
 class HeroSection extends Component {
@@ -47,7 +48,7 @@ class HeroSection extends Component {
           </div>
           <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
 
-            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900" >Home</a>
 
             <a href="#" class="font-medium text-gray-500 hover:text-gray-900">About</a>
 
@@ -101,9 +102,9 @@ class HeroSection extends Component {
           </p>
           <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-400 hover:bg-indigo-700 md:py-2.5 md:text-lg md:px-5" id="mainbtn1">
+              <Link to="/login" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-400 hover:bg-indigo-700 md:py-2.5 md:text-lg md:px-5" id="mainbtn1">
                 Get started
-              </a>
+              </Link>
             </div>
             <div class="mt-3 sm:mt-0 sm:ml-3">
               <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-indigo-200 md:py-2.5 md:text-lg md:px-5" id="mainbtn2">
@@ -119,13 +120,7 @@ class HeroSection extends Component {
           A kind heart, a healthy mind and little patience is all you need to bring a smile on someone's face. Volunteer with us to make this world a happy place!
           </p>
 
-          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-            <div class="rounded-md shadow">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-400 hover:bg-indigo-700 md:py-2.5 md:text-lg md:px-5" id="mainbtn1">
-                Volunteer
-              </a>
-            </div> 
-          </div>
+          
         </div>
       </main>
     </div>
@@ -141,7 +136,7 @@ class HeroSection extends Component {
 <div className="quote-main-div">
 <div className="quote-div">
     <center>
-        <p className="quote"> Mental health is not the destination, but a process. Its about how you drove, not where you are going.</p>
+        <p className="quote"> Mental health is not the destination, but a process. Its about how you drive, not where you are going.</p>
         <p className="author">- Noam Spencer</p>
     </center>
 </div>
@@ -259,7 +254,7 @@ class HeroSection extends Component {
                     <label>Date</label>
                 </center>
             </div>
-            <p className="review content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Donec adipiscing tristique risus nec feugiat. Tortor at auctor urna nunc. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Pellentesque diam volutpat commodo sed. Nunc sed velit dignissim sodales ut eu. Sit amet justo donec enim diam vulputate ut pharetra. Quis risus sed vulputate odio. Tellus id interdum velit laoreet id donec.</p>
+            <p className="review-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Donec adipiscing tristique risus nec feugiat. Tortor at auctor urna nunc. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Pellentesque diam volutpat commodo sed. Nunc sed velit dignissim sodales ut eu. Sit amet justo donec enim diam vulputate ut pharetra. Quis risus sed vulputate odio. Tellus id interdum velit laoreet id donec.</p>
         </div>
 
         <div className="review-card">
@@ -270,7 +265,7 @@ class HeroSection extends Component {
                     <label>Date</label>
                 </center>
             </div>
-            <p className="review content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Donec adipiscing tristique risus nec feugiat. Tortor at auctor urna nunc. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Pellentesque diam volutpat commodo sed. Nunc sed velit dignissim sodales ut eu. Sit amet justo donec enim diam vulputate ut pharetra. Quis risus sed vulputate odio. Tellus id interdum velit laoreet id donec.</p>
+            <p className="review-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Donec adipiscing tristique risus nec feugiat. Tortor at auctor urna nunc. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Pellentesque diam volutpat commodo sed. Nunc sed velit dignissim sodales ut eu. Sit amet justo donec enim diam vulputate ut pharetra. Quis risus sed vulputate odio. Tellus id interdum velit laoreet id donec.</p>
         </div>
 
         <div className="review-card">
@@ -281,7 +276,7 @@ class HeroSection extends Component {
                     <label>Date</label>
                 </center>
             </div>
-            <p className="review content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Donec adipiscing tristique risus nec feugiat. Tortor at auctor urna nunc. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Pellentesque diam volutpat commodo sed. Nunc sed velit dignissim sodales ut eu. Sit amet justo donec enim diam vulputate ut pharetra. Quis risus sed vulputate odio. Tellus id interdum velit laoreet id donec.</p>
+            <p className="review-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Donec adipiscing tristique risus nec feugiat. Tortor at auctor urna nunc. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Pellentesque diam volutpat commodo sed. Nunc sed velit dignissim sodales ut eu. Sit amet justo donec enim diam vulputate ut pharetra. Quis risus sed vulputate odio. Tellus id interdum velit laoreet id donec.</p>
         </div>
 
     </div>

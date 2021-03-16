@@ -25,7 +25,7 @@ body{
     justify-content: space-evenly;
     padding: 5rem;
     margin-top: 5rem;
-    background-color: #eeee;
+    background-color: #cef1c4;
 }
 
 .card-img-div{
@@ -73,18 +73,17 @@ body{
     line-height: 35px;
     border: .01px solid #85C872;
     border-radius: 5px;
-    color: #85C872;
-
+    color: #fff;
+    background: #85C872;
     text-align: center;
     text-decoration: none;
-    background: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-top: 3rem;
 }
 .round-button:hover {
-    background: #85C872;
-    color: rgb(245, 238, 238);
+    background: #6fad5e;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -117,6 +116,7 @@ body{
     
     padding: 1rem;
     box-shadow: 2px 2px 5px 3px rgba(18, 8, 77, 0.384)!important;
+    border-radius: 10px;
 }
 .review-head{
     font-family: 'Roboto', sans-serif;
@@ -135,10 +135,14 @@ body{
 .review-name{
     padding-top: 10px;
     font-family: 'Open Sans', sans-serif;
+    color: grey;
 }
 .review-img{
     height: 5rem;
     width: 5rem;
+}
+.review-content{
+    color: grey;
 }
 
 
@@ -154,7 +158,7 @@ body{
 }
 .quote-main-div{
     margin-top: 2rem;
-    background-color: #718096;
+    background-color: #285A84;
     color: white;
 }
 .quote{
@@ -167,7 +171,7 @@ body{
 .author{
     font-size: 1.4rem;
     padding-top: 1.5rem; 
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Dancing Script', cursive;
 }
 
 
@@ -270,7 +274,7 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
 .main-footer{
-    background-color: #718096;
+    background-color: #285A84;
     padding-top: 50px;
     box-shadow: 1px 5px 10px 1px rgba(18, 8, 77, 0.384)!important;
 }

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+.App-logo-assessment {
+  /* animation: spin infinite 20s linear; */
+  height: 80px;
+  margin: 0 auto;
+}
+
+.App-header-assessment {
+  background-color: #85C872;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  /* height: 25%; */
+}
+ 
+.App-intro {
+  font-size: medium;
+}
+
+.text{
+  margin-top: 2rem;
+  /* font-weight: 900; */
+}
+
+.common{
+  text-align: center;
+}
+
+.text{
+  font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #285A84;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: normal ;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
