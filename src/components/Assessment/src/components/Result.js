@@ -5,6 +5,8 @@ import health from "./images/Healthy2.png";
 import mild from "./images/Mild2.png";
 import Moderate from "./images/moderate2.png";
 import Severe from "./images/severe2.png";
+import './result.css'
+import {Link} from 'react-router-dom'
 
 function Result(props) {
 
@@ -110,7 +112,7 @@ are functioning within the healthy range for the general population.</h3>
       <br></br>
       <li>If your worry or panic feels out of control, and especially if you feel like you may hurt yourself, then talking to someone is really important. Get immediate assistance from the Depression Helpline 0800 111 757.</li>
       <br></br>
-      {/* <li>Buttons on Blogs,Games,etc.</li> */}
+      <Link to="/explore" className="next-btn">Explore</Link>
       </ul>
       </div>
       
