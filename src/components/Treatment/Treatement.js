@@ -11,6 +11,8 @@ import therapy from '../../assets/therapy.jpg'
 import doctors from '../../assets/doctors.jpg'
 import xyz from '../../assets/xyz.jpg'
 import selftrack from '../../assets/selftrack.jpg'
+import {Link} from 'react-router-dom'
+
 
 
 class Treatement extends Component {
@@ -81,7 +83,7 @@ class Treatement extends Component {
 Do you feel ill-equipped to deal with conflict, a life transition, or the challenges of personal and professional relationships? Is your mind full of worried thoughts of not being good enough or feeling like an imposter? Are you seeking ways to learn more effective coping strategies and new tools to tackle life’s adversities?
 
 Then take a appoint of yourself with the therapies and nudge yourself towards relaxation and calmness.</p>
-        <a className="round-button" href="#">Take Therapy</a>
+        <Link to="/therapy" className="round-button" >Take Therapy</Link>
     </div>
     <div className="card-img-div">
         <img className="card-image-1" src={therapy}></img>
@@ -97,7 +99,7 @@ Then take a appoint of yourself with the therapies and nudge yourself towards re
     <div className="card-content-div">
         <p className="card-head">Reading heals you in the best way!</p>
         <p className="card-content">When you’re depressed, it can feel like you’ll never get out from under a dark shadow. However, even the most severe depression is treatable. So, if your depression is keeping you from living the life you want to, don’t hesitate to seek help. From therapy to medication to healthy lifestyle changes, there are many different treatment options available.Of course, just as no two people are affected by depression in exactly the same way, neither is there a “one size fits all” treatment to cure depression. What works for one person might not work for another. By becoming as informed as possible, though, you can find the treatments...</p>
-        <a className="round-button" href="#">Read Here</a>
+        <Link to="/post/1" className="round-button">Read Here</Link>
     </div>
 </div>
 
@@ -106,7 +108,7 @@ Then take a appoint of yourself with the therapies and nudge yourself towards re
     <div className="card-content-div">
         <p className="card-head">Challenge yourself & feel the change!</p>
         <p className="card-content">A portal that gamifies stress/anxiety/depression management in an actionable manner to provide relief. It quantifies the difference in a user's actual and ideal stress/anxiety/depression level as credits to be spent on a prescribed set of activities before the day ends. By doing so, users inadvertently take actionable steps to deal with their condition.</p>
-        <a className="round-button" href="#">Start</a>
+        <Link to="/selfTracking" className="round-button" >Start</Link>
     </div>
     <div className="card-img-div">
         <img className="card-image-1" src={selftrack}></img>
@@ -133,7 +135,7 @@ Then take a appoint of yourself with the therapies and nudge yourself towards re
         <p className="card-content">Do you feel depressed, anxious, worried about relationship issues or suicidal? Do you have a question related to your own or someone else's mental health?
 
 India’s Best Online Therapy and Counselling Consultation Website. Soothe provides the best psychologist and counsellors in India. Our trained counsellors are qualified and are available day and night. We are here to help answer any questions you might have about mental health. Get Face-to-face Counselling Therapy Consultation. It is convenient, Affordable and Private. Confidentiality is highly maintained. You can take up therapy as per your convenience without hampering your daily schedules. You can mutually fix the session with the therapist as well.</p>
-        <a className="round-button" href="#">Consult Doctors</a>
+        <Link to="/doctors" className="round-button" >Consult Doctors</Link>
     </div>
     <div className="card-img-div">
         <img className="card-image-1" src={doctors}></img>
