@@ -12,11 +12,20 @@ import halflogo from '../../assets/halflogo.jpeg'
 import selftrack from '../../assets/selftrack.jpg'
 import './herosection.css'
 import {Link} from 'react-router-dom'
+import {Login} from "../SignUp/Login"
+import {authenticateUser} from "../SignUp/Login";
 
+
+
+// function temp()
+// {
+//   LoginCheck();
+// }
 
 class HeroSection extends Component {
  state = {}
  render() {
+   console.log("We are in the Hero Section");
   return(
       <div className="mainpageDiv">
 
@@ -54,7 +63,11 @@ class HeroSection extends Component {
 
             <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
 
-            <a href="#" class="font-medium text-green-600 hover:text-#green-500">Log in</a>
+            <a onClick={authenticateUser} href="#" class="font-medium text-green-600 hover:text-#green-500">
+            <Link to="/signup">
+            Log in
+            </Link>
+            </a>
           </div>
         </nav>
       </div>

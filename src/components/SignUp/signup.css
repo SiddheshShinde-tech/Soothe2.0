@@ -1,0 +1,21 @@
+.center-my-div
+{
+    width: 60%;
+	height: 20rem;
+	/* background-color: red; */
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 15%;
+	right: 0;
+  	
+	margin: auto;
+}
+
+.option-head-text{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-top: 6%;
+}
