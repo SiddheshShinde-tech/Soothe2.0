@@ -1,3 +1,7 @@
+body{
+    background-color: #FFFFFF;
+}
+
 .center-my-div
 {
     width: 60%;
@@ -18,4 +22,5 @@
     font-weight: bold;
     padding-left: 10%;
     padding-top: 6%;
+	color: black;
 }

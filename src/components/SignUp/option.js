@@ -9,8 +9,7 @@ import "./signup.css"
 
 const images = [
   {
-    url:
-      "https://www.medihelp.ro/public/posts/0/228/esti-o-persoana-anxioasa.jpg",
+    url:"https://i.ibb.co/Gvyr8CK/volunteer.jpg",
     title: "Volunteer",
     width: "45%"
   },
@@ -31,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-evenly",
     flexWrap: "wrap",
     minWidth: 300,
-    width: "80%"
+    width: "80%",
+    gap: 70,
   },
   image: {
     position: "relative",
@@ -108,7 +108,7 @@ export default function ButtonBases() {
 
   return (
       <div>
-          <h1 className="option-head-text">I'm here to</h1>
+          <h1 className="option-head-text">I'm here as a</h1>
 
         <div className="center-my-div">
         <div className={classes.root}>

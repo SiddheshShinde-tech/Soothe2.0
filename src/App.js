@@ -17,7 +17,7 @@ import Reward from "../src/components/ExplorePages/Self Tracking/reward";
 import CheckBack from "../src/components/ExplorePages/Self Tracking/checkback";
 import Objective from "../src/components/ExplorePages/Self Tracking/objective";
 import ShowDown from "../src/components/ExplorePages/Self Tracking/final";
-
+import Employees from "../src/components/SignUp/Volunteer Form/Employee";
 
 
 
@@ -43,6 +43,7 @@ function App() {
         <Route path="/CheckBack" component={CheckBack}></Route>
         <Route path="/Letsdoit" component={Objective}></Route>
         <Route path="/Showdown" component={ShowDown}></Route>
+        <Route path="/Volunteer" component={Employees}></Route>
       </Router>
     </div>
   );
