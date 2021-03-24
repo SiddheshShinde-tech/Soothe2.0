@@ -1,7 +1,7 @@
 .NavbarItems {
   /* background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73,63,252,1) 100%); */
   /* background-color: rgba(73,63,252,1); */
-  background-color: #f98282;
+  background-color: #85c872;
   height: 80px;
   display: flex;
   /* justify-content: left; */
@@ -27,6 +27,7 @@
 
 .navba-links {
   margin-top: 1rem;
+  color: #285a84;
 }
 
 .fa-react {
@@ -50,18 +51,17 @@
   margin-left: 0px;
   /* padding-left: 7rem; */
 
-  margin-left: 4.0rem;
-  
+  margin-left: 4rem;
 }
 
 .nav-links {
-  color: white;
+  color: #285a84;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
-  background-color: #fed0d0;
+  background-color: #cef1c4;
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }
@@ -107,7 +107,7 @@
   }
 
   .nav-menu.active {
-    background: #6668f4;
+    background: #cef1c4;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -119,10 +119,11 @@
     padding: 2rem;
     width: 100%;
     display: table;
+    color: #285a84;
   }
 
   .nav-links:hover {
-    background-color: #7577fa;
+    background-color: #cef1c4;
     /* background-color: #f2b341; */
     border-radius: 0;
   }
@@ -145,7 +146,7 @@
   }
 
   .fa-times {
-    color: #fff;
+    color: #285a84;
     font-size: 2rem;
   }
 
@@ -159,18 +160,18 @@
     /* background: #00000f; */
     background: #4ad9e4;
     text-decoration: none;
-    color: #fff;
+    color: #285a84;
     font-size: 1.5rem;
   }
 
   .nav-links-mobile:hover {
-    background: #fff;
-    color: #6568f4;
+    background: #285a84;
+    color: #cef1c4;
     transition: 250ms;
   }
 
   Button {
     display: none;
-    /* background: #493ffc; */
+    background: #285a84;
   }
 }
