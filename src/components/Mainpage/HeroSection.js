@@ -132,10 +132,16 @@ class HeroSection extends Component {
           <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 ">
           A kind heart, a healthy mind and little patience is all you need to bring a smile on someone's face. Volunteer with us to make this world a happy place!
           </p>
-
-          
           
         </div>
+
+
+        <div class="mt-3 sm:mt-0 sm:ml-3">
+              <Link to="/Volunteer"class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-indigo-200 md:py-2.5 md:text-lg md:px-5" id="volunteerbtn">
+                Volunteer
+              </Link>
+            </div>
+
       </main>
     </div>
   </div>
