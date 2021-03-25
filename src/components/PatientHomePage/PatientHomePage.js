@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import xyz from '../../assets/xyz.jpg'
-import halflogo from '../../assets/halflogo.jpeg'
-import './patienthomepage.css'
-import {Link} from 'react-router-dom'
+import React, {Component} from "react";
+import xyz from "../../assets/xyz.jpg";
+import halflogo from "../../assets/fullLogo.jpeg";
+import "./patienthomepage.css";
+import {Link} from "react-router-dom";
 
 class PatientHomePage extends Component {
  state = {}
@@ -64,4 +64,4 @@ Think about the last two weeks, rather than just today or yesterday. Take this s
 
 
 
-export default PatientHomePage
+export default PatientHomePage;

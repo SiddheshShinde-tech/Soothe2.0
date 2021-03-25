@@ -4,62 +4,61 @@
   background: #f98282;
 } */
 h1 {
-    color: white;
-  }
-  .MainDivisiontherapy {
-    width: 85%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  .SubDivisiontherapy {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .Therapy-header1 {
-    background-color: #f98282;
-    padding: 20px;
-    color: white;
-    text-align: center;
-  }
-  .MainCardtherapy {
-    width: 45%;
-    height: 350px;
-    margin-top: 20px;
-    box-shadow: 0 0 3px gray;
-    padding-bottom: 20px;
-  }
-  
-  .Card-imagetherapy {
-    height: 85%;
-  }
-  .therapyimage {
-    width: 100%;
-    height: 100%;
-  }
-  .Card-bodytherapy {
-    margin: 13px;
-    text-align: center;
-  }
+  color: white;
+}
+.MainDivisiontherapy {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.SubDivisiontherapy {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Therapy-header1 {
+  background-color: #cef1c4;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.MainCardtherapy {
+  width: 45%;
+  height: 350px;
+  margin-top: 20px;
+  box-shadow: 0 0 3px gray;
+  padding-bottom: 20px;
+}
 
-  .round-button-therapy {
-    display: block;
-    width: 180px;
-    height: 35px;
-    line-height: 35px;
-    border: .01px solid #85C872;
-    border-radius: 5px;
-    color: #fff;
-    background: #85C872;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0 auto;
-    margin-top: 1rem;
+.Card-imagetherapy {
+  height: 85%;
+}
+.therapyimage {
+  width: 100%;
+  height: 100%;
+}
+.Card-bodytherapy {
+  margin: 13px;
+  text-align: center;
+}
+
+.round-button-therapy {
+  display: block;
+  width: 180px;
+  height: 35px;
+  line-height: 35px;
+  border: 0.01px solid #85c872;
+  border-radius: 5px;
+  color: #fff;
+  background: #85c872;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 .round-button-therapy:hover {
-    background: #6fad5e;
-    color: #fff;
-    text-decoration: none;
+  background: #6fad5e;
+  color: #fff;
+  text-decoration: none;
 }
-  
