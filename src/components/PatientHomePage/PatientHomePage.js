@@ -3,7 +3,6 @@ import xyz from "../../assets/xyz.jpg";
 import halflogo from "../../assets/fullLogo.jpeg";
 import "./patienthomepage.css";
 import {Link} from "react-router-dom";
-
 class PatientHomePage extends Component {
   state = {};
   render() {
@@ -22,18 +21,18 @@ class PatientHomePage extends Component {
           }}
         >
           <div class="relative overflow-hidden ">
-            <div class="max-w-7xl mx-auto">
+            <div class="max-w-10xl mx-auto">
               <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-5">
                 <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
                   <nav
-                    class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+                    class="relative flex items-center justify-between sm:h-20 lg:justify-start"
                     aria-label="Global"
                   >
                     <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                       <div class="flex items-center justify-between w-full md:w-auto">
                         <a href="#">
                           <span class="sr-only">Workflow</span>
-                          <img class="h-8 w-auto sm:h-10" src={halflogo}></img>
+                          <img class="h-20 w-auto sm:h-45" src={halflogo}></img>
                         </a>
                       </div>
                     </div>
