@@ -1,352 +1,272 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Work+Sans:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Work+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-#herosection{
-    padding-bottom: 8rem;
-}
-
-body{
-    margin: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    background-color: white;
-}
-.mainpage-card-div{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 3rem;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    background-color: white;
+#herosection {
+  padding-bottom: 8rem;
 }
 
-.mainpage-card-div-1{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 5rem;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    background-color: #cef1c4;
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: white;
+}
+.mainpage-card-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: white;
 }
 
-.card-img-div{
-    width: 40%;
+.mainpage-card-div-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #cef1c4;
 }
-.card-content-div{
-    width: 45%;
 
-    font-family: 'Roboto', sans-serif;
+.card-img-div {
+  width: 40%;
 }
-.card-content{
-    color: grey;
-    font-size: 1.2rem;
-}
-.card-head{
-    font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
-    font-weight: 900;
-    color: #285A84;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    line-height: normal ;
-    
-}
-.card-image{
-    height: 25rem;
-    transform: scale(1) perspective(1040px) rotateY(11deg) rotateX(2deg) rotate(-2deg);
-    box-shadow: .05rem .2rem 0.5rem .05rem rgba(18, 8, 77, 0.384)!important;
-}
-.card-image-1{
-    height: 25rem;
-    transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);
-    box-shadow: .05rem .2rem 0.5rem .05rem rgba(18, 8, 77, 0.384)!important;
-}
-.card-image-chat{
-    height: 20rem;
-    transform: scale(1) perspective(1040px) rotateY(11deg) rotateX(2deg) rotate(-2deg);
-    box-shadow: .05rem .2rem 0.5rem .05rem rgba(18, 8, 77, 0.384)!important;
-}
-#volunteerbtn{
-    margin-top: 2rem;
-    margin-left: 0%;
-    width: 25%;
-    background-color: #85C872;
-    color: #ffff;
+.card-content-div {
+  width: 45%;
 
+  font-family: "Roboto", sans-serif;
+}
+.card-content {
+  color: grey;
+  font-size: 1.2rem;
+}
+.card-head {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #285a84;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: normal;
+}
+.card-image {
+  height: 25rem;
+  transform: scale(1) perspective(1040px) rotateY(11deg) rotateX(2deg)
+    rotate(-2deg);
+  box-shadow: 0.05rem 0.2rem 0.5rem 0.05rem rgba(18, 8, 77, 0.384) !important;
+}
+.card-image-1 {
+  height: 25rem;
+  transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg)
+    rotate(2deg);
+  box-shadow: 0.05rem 0.2rem 0.5rem 0.05rem rgba(18, 8, 77, 0.384) !important;
+}
+.card-image-chat {
+  height: 20rem;
+  transform: scale(1) perspective(1040px) rotateY(11deg) rotateX(2deg)
+    rotate(-2deg);
+  box-shadow: 0.05rem 0.2rem 0.5rem 0.05rem rgba(18, 8, 77, 0.384) !important;
+}
+#volunteerbtn {
+  margin-top: 2rem;
+  margin-left: 0%;
+  width: 25%;
+  background-color: #85c872;
+  color: #ffff;
 }
 .round-button {
-    display: block;
-    width: 180px;
-    height: 35px;
-    line-height: 35px;
-    border: .01px solid #85C872;
-    border-radius: 5px;
-    color: #fff;
-    background: #85C872;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 3rem;
+  display: block;
+  width: 180px;
+  height: 35px;
+  line-height: 35px;
+  border: 0.01px solid #85c872;
+  border-radius: 5px;
+  color: #fff;
+  background: #85c872;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 3rem;
 }
 .round-button:hover {
-    background: #6fad5e;
-    color: #fff;
-    text-decoration: none;
+  background: #6fad5e;
+  color: #fff;
+  text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-.mainpage-review-div{
-    padding: 4rem;
-    background-color: white;
-    
+.mainpage-review-div {
+  padding: 4rem;
+  background-color: white;
 }
-.review-card-div{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 3rem;
-    
-    
+.review-card-div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
 }
-.review-card-head{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 1.5rem;
+.review-card-head {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
 }
-.review-card{
-    margin: 2rem;
-    
-    padding: 1rem;
-    box-shadow: 2px 2px 5px 3px rgba(18, 8, 77, 0.384)!important;
-    border-radius: 10px;
+.review-card {
+  margin: 2rem;
+
+  padding: 1rem;
+  box-shadow: 2px 2px 5px 3px rgba(18, 8, 77, 0.384) !important;
+  border-radius: 10px;
 }
-.review-head{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 3rem;
-    color: #285A84;
-    
+.review-head {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #285a84;
 }
-.review-p{
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.5rem;
-    letter-spacing: 0.2;
-    font-weight: 400;
-    color: #85C872;
+.review-p {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 0.2;
+  font-weight: 400;
+  color: #85c872;
 }
-.review-name{
-    padding-top: 10px;
-    font-family: 'Open Sans', sans-serif;
-    color: grey;
+.review-name {
+  padding-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: grey;
 }
-.review-img{
-    height: 5rem;
-    width: 5rem;
+.review-img {
+  height: 5rem;
+  width: 5rem;
 }
-.review-content{
-    color: grey;
+.review-content {
+  color: grey;
 }
 
-
-
-#volunteer-btn{
-    width: 30%;
-    background:#85C872;
-    margin-top: 3rem;
-
+#volunteer-btn {
+  width: 30%;
+  background: #85c872;
+  margin-top: 3rem;
 }
 
-
-.quote-div{
-    width: 60%; 
-    padding: 5rem;
-    margin: 0 auto;
-
+.quote-div {
+  width: 60%;
+  padding: 5rem;
+  margin: 0 auto;
 }
-.quote-main-div{
-    background-color: #285A84;
-    color: white;
+.quote-main-div {
+  background-color: #285a84;
+  color: white;
 }
-.quote{
-    font-size: 2rem;
-    line-height: normal;
-    font-family: 'Dancing Script', cursive;
-    font-weight: 900;
-    
+.quote {
+  font-size: 2rem;
+  line-height: normal;
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
 }
-.author{
-    font-size: 1.4rem;
-    padding-top: 1.5rem; 
-    font-family: 'Dancing Script', cursive;
+.author {
+  font-size: 1.4rem;
+  padding-top: 1.5rem;
+  font-family: "Dancing Script", cursive;
 }
 
+.btns {
+  display: flex;
+  justify-content: space-around;
 
-
-
-
-
-
-
-
-
-.btns{
-    display: flex;
-    justify-content: space-around;
-    
-    width: 40%;
-    margin: 0 auto;
+  width: 40%;
+  margin: 0 auto;
 }
-.bottom-img-div{
-    padding-bottom: 7rem;
-    border: 1px solid;
-    padding-top: 5rem;
-    
+.bottom-img-div {
+  padding-bottom: 7rem;
+  border: 1px solid;
+  padding-top: 5rem;
 }
-.quote-2{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: #ffff;
-    margin-bottom: 20px;
-    letter-spacing: 0.1rem;
-    line-height: normal
+.quote-2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ffff;
+  margin-bottom: 20px;
+  letter-spacing: 0.1rem;
+  line-height: normal;
 }
 
-
-#happylife{
-    color: #85C872
+#happylife {
+  color: #85c872;
 }
-#happymind{
-    color: #285A84
+#happymind {
+  color: #285a84;
 }
-#mainbtn1{
-    background:#85C872
-
+#mainbtn1 {
+  background: #85c872;
 }
 
-#mainbtn2{
-    background: #cef1c4;
+#mainbtn2 {
+  background: #cef1c4;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
-
-.main-footer{
-    background-color: #285A84;
-    padding-top: 50px;
-    box-shadow: 1px 5px 10px 1px rgba(18, 8, 77, 0.384)!important;
+.main-footer {
+  background-color: #cef1c4;
+  padding-top: 50px;
+  box-shadow: 1px 5px 10px 1px rgba(18, 8, 77, 0.384) !important;
 }
-.footer-up{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.footer-up {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.footer-links{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.refrences{
-    margin-left: 50px;
+.refrences {
+  margin-left: 50px;
 }
-.footer-heading{
-    font-family: 'Noto Sans TC', sans-serif;
-    color: #2d3748;
-    font-size: 30px;
-    letter-spacing: 0.1rem;
-    margin-top: 10px;
-    font-weight: bolder;
+.footer-heading {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #285a84;
+  font-size: 30px;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+  font-weight: bolder;
 }
 
-.link-head{
-    font-family: 'Noto Sans TC', sans-serif;
-    color: #718096;
-    font-size: 16px;
-    letter-spacing: 0.1rem;
-    margin-top: 10px;
-    font-weight: 900;
-    margin-bottom: 10px;
+.link-head {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #2d3748;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+  font-weight: 900;
+  margin-bottom: 10px;
 }
-.link-p{
-    font-family: 'Noto Sans TC', sans-serif;
-    color: #2d3748;
-    font-size: 14px;
-    letter-spacing: 0.1rem;
-    margin-top: 10px;
-    font-weight: 900;
-    margin-bottom: 10px;
+.link-p {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #285a84;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+  font-weight: 900;
+  margin-bottom: 10px;
 }
-.copyright{
-    font-family: 'Noto Sans TC', sans-serif;
-    color: #2d3748;
-    font-size: 12px;
-    letter-spacing: 0.1rem;
-    margin-top: 30px;
-    font-weight: 900;
+.copyright {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #285a84;
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  font-weight: 900;
 
-    padding: 30px;
-    border-top: #2d3748 solid 0.1px;
+  padding: 30px;
+  border-top: #285a84 solid 0.1px;
 }
-
-

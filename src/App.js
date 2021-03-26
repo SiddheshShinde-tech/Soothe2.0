@@ -43,7 +43,8 @@ function App() {
         <Route path="/Letsdoit" component={Objective}></Route>
         <Route path="/Showdown" component={ShowDown}></Route>
         <Route path="/Volunteer" component={Employees}></Route>
-        <Route path="/VolunteerHomePage" component={VolunteerHomePage}></Route>
+        <Route path="/VolunteerHomePage" component={Final}></Route>
+        {/* <Route path="/Chat" component={Final}></Route> */}
       </Router>
     </div>
   );

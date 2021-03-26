@@ -1,7 +1,7 @@
 import React, {useState, useCallback} from "react";
 import {Form, InputGroup, Button} from "react-bootstrap";
 import {useConversations} from "../contexts/ConversationsProvider";
-import halflogo from "../images/Soothe_logo.jpeg";
+import halflogo from "../images/fullLogo.jpeg";
 import {ListGroup} from "react-bootstrap";
 // import {useContacts} from "../contexts/ContactsProvider";
 import Navbar from "react-bootstrap/Navbar";

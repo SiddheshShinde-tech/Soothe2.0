@@ -25,7 +25,6 @@ class HeroSection extends Component {
   render() {
     console.log("We are in the Hero Section");
     return (
-      
       <div className="mainpageDiv">
         <div class="relative bg-white overflow-hidden" id="herosection">
           <div class="max-w-7xl mx-auto">
@@ -200,11 +199,11 @@ class HeroSection extends Component {
                     heal our lives.
                   </p>
                   <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                    <div class="rounded-md shadow">
+                    <div class="mt-3 sm:mt-0 sm:ml-3">
                       <Link
                         to="/login"
-                        class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-400 hover:bg-indigo-700 md:py-2.5 md:text-lg md:px-5"
-                        id="mainbtn1"
+                        class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-indigo-200 md:py-2.5 md:text-lg md:px-5"
+                        id="mainbtn2"
                       >
                         Get started
                       </Link>
@@ -229,17 +228,14 @@ class HeroSection extends Component {
                   </p>
 
                   <div class="rounded-md ">
-                      <Link
-                        to="/VolunteerHomePage"
-                        class="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-white bg-green-400 hover:bg-indigo-700 md:py-2.5 md:text-lg md:px-5"
-                        id="volunteer-btn"
-                      >
-                        Volunteer
-                      </Link>
-                    </div>
-
-
-
+                    <Link
+                      to="/VolunteerHomePage"
+                      class="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-white bg-green-400 hover:bg-indigo-700 md:py-2.5 md:text-lg md:px-5"
+                      id="volunteer-btn"
+                    >
+                      Volunteer
+                    </Link>
+                  </div>
                 </div>
               </main>
             </div>
@@ -253,22 +249,6 @@ class HeroSection extends Component {
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div className="quote-main-div">
           <div className="quote-div">
             <center>
@@ -281,17 +261,6 @@ class HeroSection extends Component {
             </center>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
 
         <div className="mainpage-card-div">
           <div className="card-img-div">
@@ -345,61 +314,57 @@ class HeroSection extends Component {
           </div>
         </div>
 
+        <div className="mainpage-card-div-1">
+          <div className="card-content-div">
+            <p className="card-head">Challenge yourself & see the change!</p>
+            <p className="card-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a className="round-button" href="#">
+              Take Assessment
+            </a>
+          </div>
+          <div className="card-img-div">
+            <img className="card-image-1" src={selftrack}></img>
+          </div>
+        </div>
 
+        <div className="mainpage-card-div">
+          <div className="card-img-div">
+            <img className="card-image-chat" src={chat}></img>
+          </div>
+          <div className="card-content-div">
+            <p className="card-head">
+              Pour yourself out! We are here to listen you.
+            </p>
+            <p className="card-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a className="round-button" href="#">
+              Take Assessment
+            </a>
+          </div>
+        </div>
 
-
-
-<div className="mainpage-card-div-1">
-    
-    <div className="card-content-div">
-        <p className="card-head">Challenge yourself & see the change!</p>
-        <p className="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a className="round-button" href="#">Take Assessment</a>
-    </div>
-    <div className="card-img-div">
-        <img className="card-image-1" src={selftrack}></img>
-
-    </div>
-</div>
-
-<div className="mainpage-card-div">
-    <div className="card-img-div">
-        <img className="card-image-chat" src={chat}></img>
-
-    </div>
-    <div className="card-content-div">
-        <p className="card-head">Pour yourself out! We are here to listen you.</p>
-        <p className="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a className="round-button" href="#">Take Assessment</a>
-    </div>
-</div>
-
-<div className="mainpage-card-div-1">
-    
-    <div className="card-content-div">
-        <p className="card-head">Expert Doctors are always there to help you out!</p>
-        <p className="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a className="round-button" href="#">Take Assessment</a>
-    </div>
-    <div className="card-img-div">
-        <img className="card-image-1" src={doctors}></img>
-
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-        
-
-      
-
-        
+        <div className="mainpage-card-div-1">
+          <div className="card-content-div">
+            <p className="card-head">
+              Expert Doctors are always there to help you out!
+            </p>
+            <p className="card-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a className="round-button" href="#">
+              Take Assessment
+            </a>
+          </div>
+          <div className="card-img-div">
+            <img className="card-image-1" src={doctors}></img>
+          </div>
+        </div>
 
         <div className="mainpage-review-div">
           <center>
@@ -476,7 +441,7 @@ class HeroSection extends Component {
           </div>
         </div>
 
-        <div
+        {/* <div
           className="bottom-img-div"
           style={{
             backgroundImage:
@@ -495,7 +460,7 @@ class HeroSection extends Component {
             <a className="round-button">Button 1</a>
             <a className="round-button">Button 2</a>
           </div>
-        </div>
+        </div> */}
 
         <div className="main-footer">
           <div className="footer-up">
@@ -523,9 +488,6 @@ class HeroSection extends Component {
           </div>
         </div>
       </div>
-
-    
-      
     );
   }
 }
