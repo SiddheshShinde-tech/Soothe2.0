@@ -23,7 +23,11 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
 export const auth = firebase.auth();
+
+export const db = firebase.firestore();
+db.settings({timestampsInSnapshots: true});
 
 // Google Login Setup
 const provider = new firebase.auth.GoogleAuthProvider();

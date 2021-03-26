@@ -20,6 +20,10 @@ import ShowDown from "../src/components/ExplorePages/Self Tracking/final";
 import Employees from "../src/components/SignUp/Volunteer Form/Employee";
 import Final from "../src/components/ChatSystem/Final";
 import VolunteerHomePage from "../src/components/VolunteerHomePage/VolunteerHomepage";
+import Storage from "../src/components/SignUp/Storage";
+
+
+
 
 function App() {
   return (
@@ -43,8 +47,14 @@ function App() {
         <Route path="/Letsdoit" component={Objective}></Route>
         <Route path="/Showdown" component={ShowDown}></Route>
         <Route path="/Volunteer" component={Employees}></Route>
-        <Route path="/VolunteerHomePage" component={Final}></Route>
-        {/* <Route path="/Chat" component={Final}></Route> */}
+
+        {/* Chat System Located here */}
+        <Route path="/Chat" component={Final}></Route>
+        {/* Chat System Located here */}
+
+        <Route path="/VolunteerHomePage" component={VolunteerHomePage}></Route>
+
+        <Route path="/datastorage" component={Storage}></Route>
       </Router>
     </div>
   );

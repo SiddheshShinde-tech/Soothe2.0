@@ -3,6 +3,10 @@ import { Grid, } from '@material-ui/core';
 import Controls from "./components/Controls";
 import { useForm, Form } from './components/useForm';
 import * as employeeService from "./services/employeeService";
+import {Link} from "react-router-dom";
+import VolunteerHomePage from '../../VolunteerHomePage/VolunteerHomepage';
+import { useHistory } from "react-router-dom";
+
 
 
 const genderItems = [
@@ -23,7 +27,10 @@ const initialFValues = {
     isPermanent: false,
 }
 
+
 export default function EmployeeForm() {
+
+    let history = useHistory();
 
     const validate = (fieldValues = values) => {
         let temp = { ...errors }
@@ -53,10 +60,13 @@ export default function EmployeeForm() {
     } = useForm(initialFValues, true, validate);
 
     const handleSubmit = e => {
-        e.preventDefault()
+        e.preventDefault();
+        console.log("Form submitted");
         if (validate()){
+            console.log("Volunteer Validated");
             employeeService.insertEmployee(values)
-            resetForm()
+            resetForm();
+            history.push('/VolunteerHomePage');
         }
     }
 
@@ -125,7 +135,7 @@ export default function EmployeeForm() {
                     <div>
                         <Controls.Button
                             type="submit"
-                            text="Submit" />
+                            text="Submit"/>
                         <Controls.Button
                             text="Reset"
                             color="default"

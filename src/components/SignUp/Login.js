@@ -4,6 +4,10 @@ import { signInWithGoogle } from "../../firebase";
 import { auth } from "../../firebase";
 import ButtonBases from "../SignUp/option";
 import HeroSection from "../Mainpage/HeroSection";
+import Storage from "./Storage";
+
+// for storing user email id
+var userEmail;
 
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: "select_account" });
@@ -28,8 +32,9 @@ var flag;
         // result.user.delete();
 
         // display two buttons 1. Volunteer 2. Patient
-        
+        userEmail = user.email;
         flag=true;
+        
 
         // ask the user to fill login form according to the preferences
 
@@ -37,6 +42,7 @@ var flag;
         // your sign in flow
         console.log("user " + user.email + " does exist!");
         flag=false;
+        userEmail = user.email;
         
   
         // Redirect to respective portal then 
@@ -82,4 +88,4 @@ class Login extends Component {
 }
 
 export default Login;
-export {authenticateUser};
+export {authenticateUser,userEmail};
