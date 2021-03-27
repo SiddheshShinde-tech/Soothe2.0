@@ -13,6 +13,13 @@ const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: "select_account" });
 var flag;
 
+  function logOut()
+  {
+    console.log("user Logged Out");
+    <button onClick={() => auth.signOut()}>LOG OUT</button>
+    firebase.auth().signOut();
+  }
+
   function authenticateUser()
   {
     console.log("User authentication");
@@ -88,4 +95,4 @@ class Login extends Component {
 }
 
 export default Login;
-export {authenticateUser,userEmail};
+export {authenticateUser,userEmail,logOut};

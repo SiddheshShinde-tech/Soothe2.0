@@ -3,6 +3,7 @@ import halflogo from '../../assets/halflogo.jpeg'
 import './volunteerhomepage.css'
 import avatar from '../../assets/avatar.png'
 import chat from '../../assets/chat_icon.gif'
+import logOut from "../SignUp/Login";
 
 class VolunteerHomapage extends Component {
  state = {}
@@ -32,7 +33,7 @@ class VolunteerHomapage extends Component {
 
               <a href="#" class="font-medium text-green-100 hover:text-gray-900" id="navbar-links">Features</a>
 
-              <a href="#" class="font-medium text-green-300 hover:text-#green-500" id="navbar-links">Log in</a>
+              <a onClick={logOut} href="" class="font-medium text-green-300 hover:text-#green-500" id="navbar-links">Log Out</a>
             </div>
           </nav>
         </div>  
