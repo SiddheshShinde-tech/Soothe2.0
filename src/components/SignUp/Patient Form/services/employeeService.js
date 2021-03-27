@@ -4,11 +4,14 @@ const KEYS ={
 }
 
 export const getDepartmentCollection = ()=>([
-    { id: '1', title: 'Psychiatrist' },
-    { id: '2', title: 'Psychologist' },
-    { id: '3', title: 'Lifestyle Influencer' },
-    { id: '4', title: 'Pyschology/Psychiatry Student' },
-    { id: '5', title: 'Other' },
+    { id: '1', title: 'O+' },
+    { id: '2', title: 'O-' },
+    { id: '3', title: 'A+' },
+    { id: '4', title: 'A-' },
+    { id: '5', title: 'B+' },
+    { id: '6', title: 'B-' },
+    { id: '7', title: 'AB+' },
+    { id: '8', title: 'AB-' },
 ])
 
 export function insertEmployee(data) {
