@@ -24,7 +24,7 @@ So we are here with an idea of developing an application platform soothe
 2. Clone the repository using `git clone https://github.com/SiddheshShinde-tech/Soothe2.0` - Downloads all repo files to your machine.
 3. `cd Soothe2.0` - Takes you to the root directory of the project.
 
-## R⚛️
+## Run the App ⚛️
 
 Following are the steps to run the frontend of the Soothe2.0 on your local.
 
