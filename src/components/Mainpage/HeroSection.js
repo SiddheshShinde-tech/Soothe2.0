@@ -85,10 +85,11 @@ class HeroSection extends Component {
                       Home
                     </a>
 
-                    <a href="#" class="font-medium text-gray-500 hover:text-gray-900">
-                    <Link to="/datastorage">
-                    About
-                    </Link>
+                    <a
+                      href="#"
+                      class="font-medium text-gray-500 hover:text-gray-900"
+                    >
+                      <Link to="/datastorage">About</Link>
                     </a>
 
                     <a
@@ -284,10 +285,10 @@ class HeroSection extends Component {
             <p className="card-head">
               Therapies & Games can change the way you think!
             </p>
-            <p className="card-content">
+            {/* <p className="card-content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
             <a className="round-button" href="#">
               Take Assessment
             </a>
@@ -303,10 +304,10 @@ class HeroSection extends Component {
           </div>
           <div className="card-content-div">
             <p className="card-head">Reading heals you in the best way!</p>
-            <p className="card-content">
+            {/* <p className="card-content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
             <a className="round-button" href="#">
               Take Assessment
             </a>
@@ -316,10 +317,10 @@ class HeroSection extends Component {
         <div className="mainpage-card-div-1">
           <div className="card-content-div">
             <p className="card-head">Challenge yourself & see the change!</p>
-            <p className="card-content">
+            {/* <p className="card-content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
             <a className="round-button" href="#">
               Take Assessment
             </a>
@@ -337,10 +338,10 @@ class HeroSection extends Component {
             <p className="card-head">
               Pour yourself out! We are here to listen you.
             </p>
-            <p className="card-content">
+            {/* <p className="card-content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
             <a className="round-button" href="#">
               Take Assessment
             </a>
@@ -352,10 +353,10 @@ class HeroSection extends Component {
             <p className="card-head">
               Expert Doctors are always there to help you out!
             </p>
-            <p className="card-content">
+            {/* <p className="card-content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
             <a className="round-button" href="#">
               Take Assessment
             </a>
