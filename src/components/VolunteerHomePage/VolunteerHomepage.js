@@ -116,7 +116,7 @@ class VolunteerHomapage extends Component {
         </div>
         <div className="new-req-content">
 
-          <p className="new-req-name">Shikha Singh, 18, F</p>
+          <p className="new-req-name">Shikha Singh, 28, F</p>
           <p className="new-req-ill">Suicidal Thoughts, Anxiety</p>
 
           <div className="new-req-btns">

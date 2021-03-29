@@ -153,7 +153,9 @@ class Treatement extends Component {
               Sometimes you just want to be heard, understood and felt, We are here for you. We provide you psychiatrist, psychotherapist, Lifestyle inclucers, motivational speakers to listen to you and help you to come out with a smile!
             </p>
             <a className="round-button" href="#">
+            <Link to="/Chat">
               Get in Touch
+              </Link>
             </a>
           </div>
         </div>
