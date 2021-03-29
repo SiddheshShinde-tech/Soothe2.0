@@ -1,12 +1,43 @@
-import React, { Component } from 'react'
+import React, { Component,useState } from 'react'
 import halflogo from '../../assets/halflogo.jpeg'
 import './volunteerhomepage.css'
 import avatar from '../../assets/avatar.png'
 import chat from '../../assets/chat_icon.gif'
 import logOut from "../SignUp/Login";
+import {db} from "../../firebase";
+// import {userEmail} from "../SignUp/Login";
+import firebase from "../../firebase";
+import { auth } from "../../firebase";
+
+
 
 class VolunteerHomapage extends Component {
- state = {}
+ state = {
+   volunteers:null,
+ }
+
+ componentDidMount()
+ {
+  db.collection('volunteers').get().then((snapshot) => {
+    console.log(firebase.auth().currentUser.email);
+    var currentEmail = firebase.auth().currentUser.email;
+    const volunteers = [];
+    snapshot.forEach(doc => {
+      const data = doc.data();
+      console.log(data.name); 
+      console.log("data.email "+data.email); 
+      if(doc.data().email == currentEmail)
+      {
+        console.log("We are in");
+        console.log(doc.data().name);
+        volunteers.push(data);
+      } 
+      
+    })
+    this.setState({volunteers:volunteers})
+  });
+ }
+
  render() {
   return(
    <div className="volunteerhomepage">
@@ -49,15 +80,22 @@ class VolunteerHomapage extends Component {
 
 
 
-
-
-
-
 <div className="volunteer-main-div">
   <div className="volunteer-subdiv-1">
     <div className="volunteer-subdiv-1-head">
       <img className="volunteer-img" src={avatar}></img>
-      <p className="volunteer-name">Ananya Tripathi</p>
+      {/* <p className="volunteer-name">Ananya Tripathi</p> */}
+      <div>
+      {
+        this.state.volunteers && this.state.volunteers.map(volunteer => {
+          return(
+            <div>
+            <p className="volunteer-name">{volunteer.name}</p>
+            </div>
+          )
+        })
+      }
+      </div>
     </div>
 
 

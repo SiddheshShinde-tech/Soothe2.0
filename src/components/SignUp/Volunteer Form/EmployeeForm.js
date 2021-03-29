@@ -6,6 +6,7 @@ import * as employeeService from "./services/employeeService";
 import {Link} from "react-router-dom";
 import VolunteerHomePage from '../../VolunteerHomePage/VolunteerHomepage';
 import { useHistory } from "react-router-dom";
+import {db} from "../../../firebase";
 
 
 
@@ -29,6 +30,10 @@ const initialFValues = {
 
 
 export default function EmployeeForm() {
+
+    const [name,setName] = useState("");
+    const [email,setEmail] = useState("");
+    const [contact,setContact] = useState("");
 
     let history = useHistory();
 
@@ -59,15 +64,36 @@ export default function EmployeeForm() {
         resetForm
     } = useForm(initialFValues, true, validate);
 
+    
+
+
     const handleSubmit = e => {
         e.preventDefault();
+        
         console.log("Form submitted");
-        if (validate()){
-            console.log("Volunteer Validated");
-            employeeService.insertEmployee(values)
-            resetForm();
-            history.push('/VolunteerHomePage');
-        }
+        // if (validate()){
+        //     console.log("Volunteer Validated");
+        //     employeeService.insertEmployee(values)
+        //     resetForm();
+        //     history.push('/VolunteerHomePage'); //pushing the new url
+        // }
+
+        db.collection('volunteers').add({
+            name:name,
+            email:email,
+            contact:contact,
+        }).then(() => {
+            alert("Form submitted");
+            history.push('/VolunteerHomePage'); //pushing the new url
+        })
+        .catch((error) => {
+            alert(error.message);
+        });
+
+        setName("");
+        setEmail("");
+        setContact("");
+
     }
 
     return (
@@ -77,23 +103,26 @@ export default function EmployeeForm() {
                     <Controls.Input
                         name="fullName"
                         label="Full Name"
-                        value={values.fullName}
-                        onChange={handleInputChange}
-                        error={errors.fullName}
+                        // value={values.fullName}
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        // error={errors.fullName}
                     />
                     <Controls.Input
                         label="Email"
                         name="email"
-                        value={values.email}
-                        onChange={handleInputChange}
-                        error={errors.email}
+                        // value={values.email}
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        // error={errors.email}
                     />
                     <Controls.Input
                         label="Contact Number"
                         name="mobile"
-                        value={values.mobile}
-                        onChange={handleInputChange}
-                        error={errors.mobile}
+                        // value={values.mobile}
+                        value={contact}
+                        onChange={(e) => setContact(e.target.value)}
+                        // error={errors.mobile}
                     />
                     <Controls.Input
                         label="Qualifications"
@@ -117,7 +146,7 @@ export default function EmployeeForm() {
                         value={values.departmentId}
                         onChange={handleInputChange}
                         options={employeeService.getDepartmentCollection()}
-                        error={errors.departmentId}
+                        // error={errors.departmentId}
                     />
                     <Controls.DatePicker
                         name="hireDate"

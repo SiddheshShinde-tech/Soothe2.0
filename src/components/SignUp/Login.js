@@ -7,7 +7,7 @@ import HeroSection from "../Mainpage/HeroSection";
 import Storage from "./Storage";
 
 // for storing user email id
-var userEmail;
+let userEmail;
 
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: "select_account" });
