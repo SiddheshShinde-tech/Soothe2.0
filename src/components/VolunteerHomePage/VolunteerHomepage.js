@@ -7,6 +7,7 @@ import logOut from "../SignUp/Login";
 import {db} from "../../firebase";
 import firebase from "../../firebase";
 import { auth } from "../../firebase";
+import {Link} from "react-router-dom";
 
 
 
@@ -112,7 +113,7 @@ class VolunteerHomapage extends Component {
         </div>
         <div className="new-req-content">
           <p className="new-req-name">Patient Name, 21, M</p>
-          <p className="new-req-ill">Diasease he is suffering from</p>
+          <p className="new-req-ill">Disease he is suffering from</p>
           <div className="new-req-btns">
             <a className="new-req-btn-1">Accept</a>
             <a className="new-req-btn-2">Reject</a>
@@ -130,7 +131,7 @@ class VolunteerHomapage extends Component {
         </div>
         <div>
           <p className="new-req-name">Patient Name, 21, F</p>
-          <p className="new-req-ill">Diasease he is suffering from</p>
+          <p className="new-req-ill">Disease he is suffering from</p>
           <div className="new-req-btns">
             <a className="new-req-btn-1">Accept</a>
             <a className="new-req-btn-2">Reject</a>
@@ -148,7 +149,7 @@ class VolunteerHomapage extends Component {
         </div>
         <div>
           <p className="new-req-name">Patient Name, 21, M</p>
-          <p className="new-req-ill">Diasease he is suffering from</p>
+          <p className="new-req-ill">Disease he is suffering from</p>
           <div className="new-req-btns">
             <a className="new-req-btn-1">Accept</a>
             <a className="new-req-btn-2">Reject</a>
@@ -176,7 +177,9 @@ class VolunteerHomapage extends Component {
   <div className="volunteer-subdiv-2">
     <p className="volunteer-subdiv-2-head">DashBoard</p>
     <a href="#">
+    <Link to="/Chat">
     <img className="volunteer-chat-icon" src={chat} ></img>
+    </Link>
     </a>
     
     <a className="volunteerhomepage-btn">Patient 1</a>
