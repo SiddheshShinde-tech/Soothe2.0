@@ -21,7 +21,6 @@ import Employees from "../src/components/SignUp/Volunteer Form/Employee";
 import Patients from "../src/components/SignUp/Patient Form/Patient";
 import Final from "../src/components/ChatSystem/Final";
 import VolunteerHomePage from "../src/components/VolunteerHomePage/VolunteerHomepage";
-import Storage from "../src/components/SignUp/Storage";
 
 
 
@@ -54,7 +53,6 @@ function App() {
         {/* Chat System Located here */}
 
         <Route path="/VolunteerHomePage" component={VolunteerHomePage}></Route>
-        <Route path="/datastorage" component={Storage}></Route>
         <Route path="/Patient" component={Patients}></Route>
       </Router>
     </div>

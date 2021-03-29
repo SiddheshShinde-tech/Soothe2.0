@@ -4,7 +4,6 @@ import { signInWithGoogle } from "../../firebase";
 import { auth } from "../../firebase";
 import ButtonBases from "../SignUp/option";
 import HeroSection from "../Mainpage/HeroSection";
-import Storage from "./Storage";
 
 // for storing user email id
 let userEmail;

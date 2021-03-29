@@ -89,7 +89,8 @@ class HeroSection extends Component {
                       href="#"
                       class="font-medium text-gray-500 hover:text-gray-900"
                     >
-                      <Link to="/datastorage">About</Link>
+                    About
+                      {/* <Link to="/datastorage">About</Link> */}
                     </a>
 
                     <a

@@ -150,7 +150,7 @@ body {
 }
 
 #volunteer-btn {
-  width: 30%;
+  width: 25%;
   background: #85c872;
   margin-top: 3rem;
 }
@@ -209,13 +209,14 @@ body {
 }
 
 #mainbtn2 {
-  background: #cef1c4;
+  background: #85c872;
+  color: #ffff;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 
 .main-footer {
-  background-color: #cef1c4;
+  background-color: #85c872;
   padding-top: 50px;
   box-shadow: 1px 5px 10px 1px rgba(18, 8, 77, 0.384) !important;
 }
