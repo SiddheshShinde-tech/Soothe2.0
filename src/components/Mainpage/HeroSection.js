@@ -382,21 +382,12 @@ class HeroSection extends Component {
               <div className="review-card-head">
                 <img className="review-img" src={avatar}></img>
                 <center>
-                  <p className="review-name">Person name</p>
-                  <label>Date</label>
+                  <p className="review-name">Nikhil Yadav</p>
+                  <label>22 March 2021</label>
                 </center>
               </div>
               <p className="review-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. A
-                diam sollicitudin tempor id. Et netus et malesuada fames ac
-                turpis egestas maecenas pharetra. Donec adipiscing tristique
-                risus nec feugiat. Tortor at auctor urna nunc. Duis tristique
-                sollicitudin nibh sit amet commodo nulla facilisi. Pellentesque
-                diam volutpat commodo sed. Nunc sed velit dignissim sodales ut
-                eu. Sit amet justo donec enim diam vulputate ut pharetra. Quis
-                risus sed vulputate odio. Tellus id interdum velit laoreet id
-                donec.
+              I just started really, but after the first few sessions I'm already amazed at how accurate it describes my reactions to things on the daily. I'm eager to start seeing what kind of results can come from something like this app. It seems to be a bit cliche at first regarding some of the questions and styles of approach but I can't argue it didn't get me spot on. Perhaps if the app could offer a rephrasing of the questions as an option at times, even better.
               </p>
             </div>
 
@@ -404,21 +395,12 @@ class HeroSection extends Component {
               <div className="review-card-head">
                 <img className="review-img" src={avatar}></img>
                 <center>
-                  <p className="review-name">Person name</p>
-                  <label>Date</label>
+                  <p className="review-name">Nida Afreen</p>
+                  <label>9 January 2021</label>
                 </center>
               </div>
               <p className="review-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. A
-                diam sollicitudin tempor id. Et netus et malesuada fames ac
-                turpis egestas maecenas pharetra. Donec adipiscing tristique
-                risus nec feugiat. Tortor at auctor urna nunc. Duis tristique
-                sollicitudin nibh sit amet commodo nulla facilisi. Pellentesque
-                diam volutpat commodo sed. Nunc sed velit dignissim sodales ut
-                eu. Sit amet justo donec enim diam vulputate ut pharetra. Quis
-                risus sed vulputate odio. Tellus id interdum velit laoreet id
-                donec.
+              So far I love this app. There are no ads that I have seen yet and it hasn't asked me to pay for anything. I keep expecting to hit a paywall and I never do. I am thoroughly impressed with what I've mentioned thus far, and with the content as well. I can see this helping me significantly and with what I've experienced with this app, I think it is really important that mental health resources like this aren't held behind a paywall so Thank You!
               </p>
             </div>
 
@@ -426,21 +408,12 @@ class HeroSection extends Component {
               <div className="review-card-head">
                 <img className="review-img" src={avatar}></img>
                 <center>
-                  <p className="review-name">Person name</p>
-                  <label>Date</label>
+                  <p className="review-name">Ayushi Gupta</p>
+                  <label>6 February 2021</label>
                 </center>
               </div>
               <p className="review-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. A
-                diam sollicitudin tempor id. Et netus et malesuada fames ac
-                turpis egestas maecenas pharetra. Donec adipiscing tristique
-                risus nec feugiat. Tortor at auctor urna nunc. Duis tristique
-                sollicitudin nibh sit amet commodo nulla facilisi. Pellentesque
-                diam volutpat commodo sed. Nunc sed velit dignissim sodales ut
-                eu. Sit amet justo donec enim diam vulputate ut pharetra. Quis
-                risus sed vulputate odio. Tellus id interdum velit laoreet id
-                donec.
+              It's awesome! I regret I didn't have it before, it's a genius app which can help you keep track of yourself and help you to overcome negative qualities, it is helpful for the people who face anxiety, thank you so much developers for making it! I urge everyone to download this app and use it daily to learn and grow and know more about yourself by daily keeping a track.
               </p>
             </div>
           </div>
