@@ -1,7 +1,10 @@
 import React, { Component,useState } from 'react'
 import halflogo from '../../assets/halflogo.jpeg'
+import fulllogo from '../../assets/fullLogo.jpeg'
 import './volunteerhomepage.css'
 import avatar from '../../assets/avatar.png'
+
+import doctoravatar from '../../assets/doctoravatar.jpg'
 import chat from '../../assets/chat_icon.gif'
 import logOut from "../SignUp/Login";
 import {db} from "../../firebase";
@@ -52,7 +55,7 @@ class VolunteerHomapage extends Component {
               <div class="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
                   <span class="sr-only">Workflow</span>
-                  <img class="h-8 w-auto sm:h-10" src={halflogo}></img>
+                  <img class="h-8 w-auto sm:h-10" src={fulllogo} id="navbar-logo"></img>
                 </a>
               </div>
             </div>
@@ -83,7 +86,7 @@ class VolunteerHomapage extends Component {
 <div className="volunteer-main-div">
   <div className="volunteer-subdiv-1">
     <div className="volunteer-subdiv-1-head">
-      <img className="volunteer-img" src={avatar}></img>
+      <img className="volunteer-img" src={doctoravatar}></img>
       {/* <p className="volunteer-name">Ananya Tripathi</p> */}
       <div>
       {
@@ -112,11 +115,13 @@ class VolunteerHomapage extends Component {
           <img className="new-req-img" src={avatar}></img>
         </div>
         <div className="new-req-content">
-          <p className="new-req-name">Patient Name, 21, M</p>
-          <p className="new-req-ill">Disease he is suffering from</p>
+
+          <p className="new-req-name">Shikha Singh, 18, F</p>
+          <p className="new-req-ill">Suicidal Thoughts, Anxiety</p>
+
           <div className="new-req-btns">
-            <a className="new-req-btn-1">Accept</a>
-            <a className="new-req-btn-2">Reject</a>
+            <a className="new-req-btn-1" href="#">Accept</a>
+            <a className="new-req-btn-2" href="#">Reject</a>
           </div>
         </div>
       </div>
@@ -130,11 +135,13 @@ class VolunteerHomapage extends Component {
           <img className="new-req-img" src={avatar}></img>
         </div>
         <div>
-          <p className="new-req-name">Patient Name, 21, F</p>
-          <p className="new-req-ill">Disease he is suffering from</p>
+
+          <p className="new-req-name">Farhan Khan, 25, M</p>
+          <p className="new-req-ill">Depression, Anxiety</p>
+
           <div className="new-req-btns">
-            <a className="new-req-btn-1">Accept</a>
-            <a className="new-req-btn-2">Reject</a>
+            <a className="new-req-btn-1" href="#">Accept</a>
+            <a className="new-req-btn-2" href="#">Reject</a>
           </div>
         </div>
       </div>
@@ -148,11 +155,13 @@ class VolunteerHomapage extends Component {
           <img className="new-req-img" src={avatar}></img>
         </div>
         <div>
-          <p className="new-req-name">Patient Name, 21, M</p>
-          <p className="new-req-ill">Disease he is suffering from</p>
+
+          <p className="new-req-name">Ayushi Gupta, 21, F</p>
+          <p className="new-req-ill">Anxiety, Sleep deprivation</p>
+
           <div className="new-req-btns">
-            <a className="new-req-btn-1">Accept</a>
-            <a className="new-req-btn-2">Reject</a>
+            <a className="new-req-btn-1" href="#">Accept</a>
+            <a className="new-req-btn-2" href="#">Reject</a>
           </div>
         </div>
       </div>
@@ -176,18 +185,22 @@ class VolunteerHomapage extends Component {
 
   <div className="volunteer-subdiv-2">
     <p className="volunteer-subdiv-2-head">DashBoard</p>
+    
+   
+     
+
     <a href="#">
     <Link to="/Chat">
+
     <img className="volunteer-chat-icon" src={chat} ></img>
     </Link>
     </a>
     
-    <a className="volunteerhomepage-btn">Patient 1</a>
-    <a className="volunteerhomepage-btn">Patient 2</a>
-    <a className="volunteerhomepage-btn">Patient 3</a>
-    <a className="volunteerhomepage-btn">Patient 4</a>
-    <a className="volunteerhomepage-btn">Patient 5</a>
-    <a className="volunteerhomepage-btn">Patient 6</a>
+    <a className="volunteerhomepage-btn">Nikhil Yadav</a>
+    <a className="volunteerhomepage-btn">Ayush</a>
+    <a className="volunteerhomepage-btn">Zeeshan</a>
+    <a className="volunteerhomepage-btn">Nida Afreen</a>
+
   </div>
 </div>
 

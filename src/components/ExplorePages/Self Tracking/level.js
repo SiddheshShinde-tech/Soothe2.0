@@ -4,14 +4,14 @@ import Slider from "./inputSlider";
 import Button from '@material-ui/core/Button';
 import {Link} from "react-router-dom";
 import fanky from "./image/depression-friend.jpg"
-
+import fullLogo from '../../../assets/fullLogo.jpeg'
 function levelup()
 {
     return(
         <div>
             <h2 className="topbar">Soothe</h2>
             <div className="belowtopbar">
-                <img className="image-handle" src={image}></img>
+                <img className="image-handle" src={fullLogo}></img>
                 <h1 class="headingheadddd">Self Tracking and Assessment Portal</h1>
             </div>
 

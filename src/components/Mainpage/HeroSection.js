@@ -48,7 +48,7 @@ class HeroSection extends Component {
                     <div class="flex items-center justify-between w-full md:w-auto">
                       <a href="#">
                         <span class="sr-only">Workflow</span>
-                        <img class="h-8 w-auto sm:h-10" src={halflogo}></img>
+                        <img class="h-8 w-auto sm:h-10" src={halflogo} id="mainpage-logo"></img>
                       </a>
                       <div class="-mr-2 flex items-center md:hidden">
                         <button
@@ -81,6 +81,7 @@ class HeroSection extends Component {
                     <a
                       href="#"
                       class="font-medium text-gray-500 hover:text-gray-900"
+                      id="navbar-btns"
                     >
                       Home
                     </a>
@@ -88,6 +89,7 @@ class HeroSection extends Component {
                     <a
                       href="#"
                       class="font-medium text-gray-500 hover:text-gray-900"
+                      id="navbar-btns"
                     >
                     About
                       {/* <Link to="/datastorage">About</Link> */}
@@ -96,6 +98,7 @@ class HeroSection extends Component {
                     <a
                       href="#"
                       class="font-medium text-gray-500 hover:text-gray-900"
+                      id="navbar-btns"
                     >
                       Features
                     </a>
@@ -104,8 +107,9 @@ class HeroSection extends Component {
                       onClick={authenticateUser}
                       href="#"
                       class="font-medium text-green-600 hover:text-#green-500"
+                      id="navbar-btns"
                     >
-                      <Link to="/signup">Log in</Link>
+                      <Link to="/signup" id="navbar-btns">Log in</Link>
                     </a>
                   </div>
                 </nav>
@@ -291,7 +295,7 @@ class HeroSection extends Component {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p> */}
             <a className="round-button" href="#">
-              Take Assessment
+              Get in Touch
             </a>
           </div>
           <div className="card-img-div">
@@ -310,7 +314,7 @@ class HeroSection extends Component {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p> */}
             <a className="round-button" href="#">
-              Take Assessment
+              Explore
             </a>
           </div>
         </div>
@@ -323,7 +327,7 @@ class HeroSection extends Component {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p> */}
             <a className="round-button" href="#">
-              Take Assessment
+              Start
             </a>
           </div>
           <div className="card-img-div">
@@ -344,7 +348,7 @@ class HeroSection extends Component {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p> */}
             <a className="round-button" href="#">
-              Take Assessment
+              Get in Touch
             </a>
           </div>
         </div>
@@ -359,7 +363,7 @@ class HeroSection extends Component {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p> */}
             <a className="round-button" href="#">
-              Take Assessment
+              Consult
             </a>
           </div>
           <div className="card-img-div">

@@ -13,6 +13,9 @@ body{
     margin: 15px;
     width: 10%;
 }
+#navbar-links{
+    text-decoration: none;
+}
 .volunteer-main-div{
     display: flex;
     justify-content: space-evenly;
@@ -117,6 +120,20 @@ body{
     margin-top: 1rem;
     padding: 4px;
 }
+.new-req-btn-1:hover{
+    display: block;
+    width: 4rem;
+    border: .01px solid #85C872;
+    border-radius: 5px;
+    color: #fff;
+    background: #85C872;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 1rem;
+    padding: 4px;
+}
 .new-req-btn-2{
     display: block;
     width: 4rem;
@@ -130,6 +147,20 @@ body{
     margin-top: 1rem;
     padding: 4px;
 }
+.new-req-btn-2:hover{
+    display: block;
+    width: 4rem;
+    border-radius: 5px;
+    color: rgb(80, 78, 78);
+    background: #c7cac6;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 1rem;
+    padding: 4px;
+}
+
 
 .volunteer-quote{
     text-align: center;
@@ -151,4 +182,15 @@ body{
 .volunteer-chat-icon{
     margin: 0 auto;
     margin-bottom: 1rem;
+}
+.chats{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+.letstalk{
+    text-decoration: none;
 }
