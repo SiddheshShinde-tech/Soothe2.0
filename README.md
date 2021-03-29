@@ -1,6 +1,6 @@
 # Soothe 2.0
 
- <p align="center" width="400px"> <font size="5"> <b>Web application “Soothe”, helps people to deal with their mental illness and also help them in overcoming it. Millions of people are suffering from mental disorders but only a small percentage of them seek professional aid.
+<p align="center" width="400px"> <font size="5"> <b>Web application “Soothe”, helps people to deal with their mental illness and also help them in overcoming it. Millions of people are suffering from mental disorders but only a small percentage of them seek professional aid.
 
 Recent years have seen important developments in preventive and therapeutic digital tools such as games, digital psychotherapies, etc. yet despite the potential interest in such tools to improve treatment of mental disorders and to help prevent them, the field remains understudied and information is under disseminated in clinical practice.
 
@@ -14,7 +14,7 @@ So we are here with an idea of developing an application platform soothe
 
 ## Tech Stack 🗃
 
-<img src="https://img.shields.io/badge/-Firebase-yellow?style=flat&logo=Firebase"> <img src="https://img.shields.io/badge/ReactJS%20-%2320232a.svg?logo=react" > <img src="https://img.shields.io/badge/-NodeJS%20-%2320232a?style=flat&logo=node.js">
+<img src="https://img.shields.io/badge/-Firebase-yellow?style=flat&logo=Firebase"> <img src="https://img.shields.io/badge/ReactJS%20-%2320232a.svg?logo=react" > <img src="https://img.shields.io/badge/-NodeJS%20-%2320232a?style=flat&logo=node.js"> <img src="https://img.shields.io/badge/-Tailwindcss%20-%2320232a?style=flat&logo=tailwindcss">
 
 ## Getting Started 👨‍💻
 
@@ -24,10 +24,23 @@ So we are here with an idea of developing an application platform soothe
 2. Clone the repository using `git clone https://github.com/SiddheshShinde-tech/Soothe2.0` - Downloads all repo files to your machine.
 3. `cd Soothe2.0` - Takes you to the root directory of the project.
 
-## Frontend ⚛️
+## R⚛️
 
 Following are the steps to run the frontend of the Soothe2.0 on your local.
 
 1. Run `npm install`. It will install all the required packages and dependencies.
 2. Run `npm start` to run the server.
 3. Navigate to [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Chat System
+
+Following are the steps to run the Chat System demo.
+
+1. `cd server1` `cd server`- Takes you to the server directory of the project.
+2. Run `npm i socket.io` to download socket.io
+3. Run `npm i --save-dev nodemon`
+4. Run `npm run devStart`- To run the server.
+
+### References
+
+1. [https://github.com/WebDevSimplified?after=Y3Vyc29yOnYyOpK0MjAyMS0wMS0wNVQxNTowMToxMlrODKHsNg%3D%3D&tab=repositories]
