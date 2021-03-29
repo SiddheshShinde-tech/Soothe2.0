@@ -10,6 +10,7 @@ import logOut from "../SignUp/Login";
 import {db} from "../../firebase";
 import firebase from "../../firebase";
 import { auth } from "../../firebase";
+import {Link} from "react-router-dom";
 
 
 
@@ -114,8 +115,10 @@ class VolunteerHomapage extends Component {
           <img className="new-req-img" src={avatar}></img>
         </div>
         <div className="new-req-content">
+
           <p className="new-req-name">Shikha Singh, 18, F</p>
           <p className="new-req-ill">Suicidal Thoughts, Anxiety</p>
+
           <div className="new-req-btns">
             <a className="new-req-btn-1" href="#">Accept</a>
             <a className="new-req-btn-2" href="#">Reject</a>
@@ -132,8 +135,10 @@ class VolunteerHomapage extends Component {
           <img className="new-req-img" src={avatar}></img>
         </div>
         <div>
+
           <p className="new-req-name">Farhan Khan, 25, M</p>
           <p className="new-req-ill">Depression, Anxiety</p>
+
           <div className="new-req-btns">
             <a className="new-req-btn-1" href="#">Accept</a>
             <a className="new-req-btn-2" href="#">Reject</a>
@@ -150,8 +155,10 @@ class VolunteerHomapage extends Component {
           <img className="new-req-img" src={avatar}></img>
         </div>
         <div>
+
           <p className="new-req-name">Ayushi Gupta, 21, F</p>
           <p className="new-req-ill">Anxiety, Sleep deprivation</p>
+
           <div className="new-req-btns">
             <a className="new-req-btn-1" href="#">Accept</a>
             <a className="new-req-btn-2" href="#">Reject</a>
@@ -179,10 +186,14 @@ class VolunteerHomapage extends Component {
   <div className="volunteer-subdiv-2">
     <p className="volunteer-subdiv-2-head">DashBoard</p>
     
-    <a href="#" className="letstalk">
-      <p className="chats">Let's Talk</p>
+   
      
+
+    <a href="#">
+    <Link to="/Chat">
+
     <img className="volunteer-chat-icon" src={chat} ></img>
+    </Link>
     </a>
     
     <a className="volunteerhomepage-btn">Nikhil Yadav</a>
