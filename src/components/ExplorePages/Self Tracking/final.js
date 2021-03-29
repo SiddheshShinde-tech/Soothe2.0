@@ -65,7 +65,7 @@ function showdown()
             <FinalSlider />
             </div>
             <div class="forbutton">
-            <Link to="/homepage" className="">Take a Break</Link>
+            <Link to="/explore" className="">Take a Break</Link>
             </div>
             <div class="forbutton">
             <Link to="/welcome" className="">Try Again</Link>
