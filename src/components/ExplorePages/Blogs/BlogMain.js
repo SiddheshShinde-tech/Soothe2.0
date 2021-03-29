@@ -9,10 +9,14 @@ const BlogMain = (props) => {
     console.log(props);
   
     return (
-      <div className="container1">
+      <div>
         <Navbar />
+      
+      <div className="container1">
+        
         <Blogpost {...props}></Blogpost>
         <Sidebar></Sidebar>
+      </div>
       </div>
     );
   };
