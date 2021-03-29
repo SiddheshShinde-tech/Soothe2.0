@@ -4,6 +4,7 @@ import Controls from "./components/Controls";
 import { useForm, Form } from './components/useForm';
 import * as employeeService from "./services/employeeService";
 import { useHistory } from "react-router-dom";
+import {db} from "../../../firebase";
 
 
 
@@ -34,6 +35,16 @@ const initialFValues = {
 
 
 export default function PatientForm() {
+
+    const [name,setName] = useState("");
+    const [email,setEmail] = useState("");
+    const [contact,setContact] = useState("");
+    const [age,setAge] = useState("");
+    const [weight,setWeight] = useState("");
+    const [gender,setGender] = useState("");
+    const [bloodgroup,setBloodGroup] = useState("");
+    const [diabetic,setDiabetic] = useState("");
+
 
     let history = useHistory();
 
@@ -69,12 +80,38 @@ export default function PatientForm() {
     const handleSubmit = e => {
         e.preventDefault();
         console.log("Patient Form submitted");
-        if (validate()){
-            console.log("Patient Validated");
-            employeeService.insertEmployee(values)
-            resetForm();
-            history.push('/login');
-        }
+        // if (validate()){
+        //     console.log("Patient Validated");
+        //     employeeService.insertEmployee(values)
+        //     resetForm();
+        //     history.push('/login');
+        // }
+
+        db.collection('patients').add({
+            name:name,
+            email:email,
+            contact:contact,
+            gender:gender,
+            age:age,
+            weight:weight,
+            bloodgroup:bloodgroup,
+            diabetic:diabetic,
+        }).then(() => {
+            alert("Form submitted");
+            history.push('/login'); //pushing the new url
+        })
+        .catch((error) => {
+            alert(error.message);
+        });
+
+        setName("");
+        setEmail("");
+        setContact("");
+        setAge("");
+        setWeight("");
+        setBloodGroup("");
+        setDiabetic("");
+        setGender("");
     }
 
     return (
@@ -84,71 +121,71 @@ export default function PatientForm() {
                     <Controls.Input
                         name="fullName"
                         label="Full Name"
-                        value={values.fullName}
-                        onChange={handleInputChange}
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         error={errors.fullName}
                     />
                     <Controls.Input
                         label="Email"
                         name="email"
-                        value={values.email}
-                        onChange={handleInputChange}
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         error={errors.email}
                     />
                     <Controls.Input
                         label="Contact Number"
                         name="mobile"
-                        value={values.mobile}
-                        onChange={handleInputChange}
+                        value={contact}
+                        onChange={(e) => setContact(e.target.value)}
                         error={errors.mobile}
                     />
                     <Controls.Input
                         label="Age"
                         name="age"
-                        value={values.age}
-                        onChange={handleInputChange}
+                        value={age}
+                        onChange={(e) => setAge(e.target.value)}
                     />
                     <Controls.Input
-                        label="Weight"
+                        label="Weight (in Kg)"
                         name="weight"
-                        value={values.weight}
-                        onChange={handleInputChange}
+                        value={weight}
+                        onChange={(e) => setWeight(e.target.value)}
                         error={errors.weight}
                     />
-                    <Controls.Input
+                    {/* <Controls.Input
                         label="Height"
                         name="height"
                         value={values.height}
                         onChange={handleInputChange}
                         error={errors.height}
-                    />
+                    /> */}
 
                 </Grid>
                 <Grid item xs={6}>
                     <Controls.RadioGroup
                         name="gender"
                         label="Gender"
-                        value={values.gender}
-                        onChange={handleInputChange}
+                        value={gender}
+                        onChange={(e) => setGender(e.target.value)}
                         items={genderItems}
                     />
                     <Controls.RadioGroup
                         name="diabetic"
                         label="Diabetic"
-                        value={values.diabetic}
-                        onChange={handleInputChange}
+                        value={diabetic}
+                        onChange={(e) => setDiabetic(e.target.value)}
                         items={diabeticItems}
                     />
                     <Controls.Select
                         name="departmentId"
                         label="Blood Group"
-                        value={values.departmentId}
-                        onChange={handleInputChange}
+                        value={bloodgroup}
+                        onChange={(e) => setBloodGroup(e.target.value)}
                         options={employeeService.getDepartmentCollection()}
                         error={errors.departmentId}
                     />
                     <Controls.RadioGroup
-                        name="diabetic"
+                        name="medication"
                         label="Are you on any medication currently ?"
                         value={values.diabetic}
                         onChange={handleInputChange}

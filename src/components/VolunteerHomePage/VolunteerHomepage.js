@@ -5,7 +5,6 @@ import avatar from '../../assets/avatar.png'
 import chat from '../../assets/chat_icon.gif'
 import logOut from "../SignUp/Login";
 import {db} from "../../firebase";
-// import {userEmail} from "../SignUp/Login";
 import firebase from "../../firebase";
 import { auth } from "../../firebase";
 

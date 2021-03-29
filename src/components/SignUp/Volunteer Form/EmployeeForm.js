@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Grid, } from '@material-ui/core';
+import React, { useState, useEffect } from 'react';
+import { Grid } from '@material-ui/core';
 import Controls from "./components/Controls";
 import { useForm, Form } from './components/useForm';
 import * as employeeService from "./services/employeeService";
@@ -34,6 +34,9 @@ export default function EmployeeForm() {
     const [name,setName] = useState("");
     const [email,setEmail] = useState("");
     const [contact,setContact] = useState("");
+    const [qualification,setQualification] = useState("");
+    const [designation,setDesignation] = useState("");
+    const [gender,setGender] = useState("");
 
     let history = useHistory();
 
@@ -82,6 +85,9 @@ export default function EmployeeForm() {
             name:name,
             email:email,
             contact:contact,
+            gender:gender,
+            designation:designation,
+            qualification:qualification,
         }).then(() => {
             alert("Form submitted");
             history.push('/VolunteerHomePage'); //pushing the new url
@@ -93,6 +99,9 @@ export default function EmployeeForm() {
         setName("");
         setEmail("");
         setContact("");
+        setQualification("");
+        setDesignation("");
+        setGender("");
 
     }
 
@@ -127,8 +136,8 @@ export default function EmployeeForm() {
                     <Controls.Input
                         label="Qualifications"
                         name="city"
-                        value={values.city}
-                        onChange={handleInputChange}
+                        value={qualification}
+                        onChange={(e) => setQualification(e.target.value)}
                     />
 
                 </Grid>
@@ -136,15 +145,15 @@ export default function EmployeeForm() {
                     <Controls.RadioGroup
                         name="gender"
                         label="Gender"
-                        value={values.gender}
-                        onChange={handleInputChange}
+                        value={gender}
+                        onChange={(e) => setGender(e.target.value)}
                         items={genderItems}
                     />
                     <Controls.Select
                         name="departmentId"
                         label="Designation"
-                        value={values.departmentId}
-                        onChange={handleInputChange}
+                        value={designation}
+                        onChange={(e) => setDesignation(e.target.value)}
                         options={employeeService.getDepartmentCollection()}
                         // error={errors.departmentId}
                     />
