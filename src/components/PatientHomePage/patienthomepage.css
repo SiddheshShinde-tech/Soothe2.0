@@ -5,6 +5,7 @@
 .homepage-img-div{
     padding-bottom: 15rem;
     padding-top: 1rem;
+    
 }
 .homepage-asses-div{
     width: 60%;
@@ -13,6 +14,7 @@
     text-align: center;
     padding: 3rem;
     margin-top: 5rem;
+    box-shadow: 1px 5px 10px 1px rgba(18, 8, 77, 0.384) !important;
 }
 .assess-head-p{
     font-family: 'Roboto', sans-serif;
@@ -41,4 +43,8 @@
 }
 #patienthomepage-btn{
     background-color: #85C872;
+}
+#patienthomepage-btn:hover{
+    background-color: #85C872;
+    text-decoration: none;
 }

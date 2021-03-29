@@ -153,8 +153,16 @@ body {
   width: 25%;
   background: #85c872;
   margin-top: 3rem;
+  text-decoration: none;
 }
+#navbar-btns{
+  text-decoration: none;
+}
+#mainpage-logo{
+  height: 4rem;
+  width: 8rem;
 
+}
 .quote-div {
   width: 60%;
   padding: 5rem;
@@ -206,11 +214,13 @@ body {
 }
 #mainbtn1 {
   background: #85c872;
+  text-decoration: none;
 }
 
 #mainbtn2 {
   background: #85c872;
   color: #ffff;
+  text-decoration: none;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");

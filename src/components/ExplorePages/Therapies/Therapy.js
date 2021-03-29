@@ -3,6 +3,7 @@ import therapy1 from "../Therapies/TherapyAssets/therapy1.png"
 import therapy2 from "../Therapies/TherapyAssets/therapy2.png";
 import therapy3 from "../Therapies/TherapyAssets/therapy3.png";
 import therapy4 from "../Therapies/TherapyAssets/therapy4.png";
+import fullLogo from '../../../assets/fullLogo.jpeg'
 import "./therapy.css";
 import logo from "../Therapies/TherapyAssets/logo5.png";
 
@@ -14,7 +15,7 @@ class Therapy extends Component {
     return (
       <div>
         <div className="Therapy-header1">
-          <img src={logo} className="App-logo-assessment" alt="logo" />
+          <img src={fullLogo} className="App-logo-assessment" alt="logo" />
           <h1 className="text">Take Therapy</h1>
         </div>
 

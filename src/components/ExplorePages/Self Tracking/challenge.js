@@ -3,6 +3,7 @@ import image from "./image/logo6.png" ;
 import chall2 from "./image/chall2.jpg";
 import {Link} from "react-router-dom";
 import CheckBox from "./checkbox";
+import './tracking.css'
 
 function canyouDoIt()
 {

@@ -3,6 +3,8 @@ import "./tracking.css";
 import image from "./image/logo6.png" ;
 import welcome from "./image/doctor-welcome.jpg"
 import {Link} from "react-router-dom";
+import fullLogo from '../../../assets/fullLogo.jpeg'
+
 
 function greet()
 {
@@ -10,7 +12,7 @@ function greet()
     <div>
     <h2 className="topbar">Soothe</h2>
     <div className="belowtopbar">
-    <img className="image-handle" src={image}></img>
+    <img className="image-handle" src={fullLogo}></img>
     <h1 class="headingheadddd">Self Tracking and Assessment Portal</h1>
     </div>
 

@@ -2,7 +2,7 @@
 .topbar{
     /* height: 5%; */
     color: white;
-    background-color: #f98282;
+    background-color: #85C872;
     /* background-color: #cd84f1; */
     /* background-image: url("https://www.transparenttextures.com/patterns/always-grey.png"); */
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -34,7 +34,7 @@
 .belowtopbar
 {
     text-align: center;
-background-color: #fa9a9a;
+background-color: #85C872;
 color: white;
 font-weight: bolder;
 background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
@@ -46,7 +46,9 @@ padding: 2.8% 0 2.8% 0;
 .image-handle{
     text-align: center;
     height: 5rem;
-    width: 5rem;
+    width: 10rem;
+    
+    margin: 0 auto;
     margin-bottom: 2rem;
 }
 
@@ -205,13 +207,10 @@ padding: 2.8% 0 2.8% 0;
 
 .colour-box{
     background-color: #dedede;
+    padding: 2rem;
+    width: 40rem;
 }
 
-.special
-{
-    position: fixed;
-    /* margin-bottom: -10rem; */
-}
 
 .rewardText
 {

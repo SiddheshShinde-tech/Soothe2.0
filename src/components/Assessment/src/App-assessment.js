@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import quizQuestions from './api/quizQuestions';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
-import logo from "./svg/logo5.png";
+import fullLogo from '../../../../src/assets/fullLogo.jpeg'
+
 import './App-assessment.css';
 // import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
@@ -105,8 +106,8 @@ class App extends Component {
     return (
       <div className="">
         <div className="App-header-assessment">
-          <img src={logo} className="App-logo-assessment" alt="logo" />
-          <p className="text">Anxiety Test</p>
+          <img src={fullLogo} className="App-logo-assessment" alt="logo" />
+          <p className="text">Assessment</p>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>

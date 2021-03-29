@@ -16,7 +16,7 @@ function Result(props) {
     {
       return(<div className="common">
       <h2>Healthy</h2>
-      <img src={health} alt="healthy-img"></img>
+      <img src={health} className="healthyimg" alt="healthy-img"></img>
       <br></br>
       <br></br>
       <h2>Your Result:</h2>
@@ -60,7 +60,7 @@ are functioning within the healthy range for the general population.</h3>
   }
 
   return (
-    <div>
+    <div className="result-div">
     <CSSTransitionGroup
       className="container result"
       component="div"

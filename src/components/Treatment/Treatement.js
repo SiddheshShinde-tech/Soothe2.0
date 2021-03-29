@@ -64,7 +64,7 @@ class Treatement extends Component {
                       class="font-medium text-green-300 hover:text-#green-500"
                       id="navbar-links"
                     >
-                      Log in
+                      Log out
                     </a>
                   </div>
                 </nav>
@@ -150,8 +150,7 @@ class Treatement extends Component {
               Pour yourself out! We are here to listen you.
             </p>
             <p className="card-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Sometimes you just want to be heard, understood and felt, We are here for you. We provide you psychiatrist, psychotherapist, Lifestyle inclucers, motivational speakers to listen to you and help you to come out with a smile!
             </p>
             <a className="round-button" href="#">
               Get in Touch
