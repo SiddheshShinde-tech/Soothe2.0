@@ -43,4 +43,4 @@ Following are the steps to run the Chat System demo.
 
 ### References
 
-1. [https://github.com/WebDevSimplified?after=Y3Vyc29yOnYyOpK0MjAyMS0wMS0wNVQxNTowMToxMlrODKHsNg%3D%3D&tab=repositories]
+1. [https://github.com/WebDevSimplified/Whatsapp-Clone]
