@@ -37,7 +37,7 @@ const Blogpost = (props) => {
           <img
             classname="postimage"
             alt="Post Image"
-            src={require("../images/" + post.blogImage)}
+            src="https://i0.wp.com/www.additudemag.com/wp-content/uploads/2017/02/Depression_GettyImages-947804676.jpg"
           />
         </div>
 

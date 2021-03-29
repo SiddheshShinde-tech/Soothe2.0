@@ -35,7 +35,7 @@ const Sidebar = (props) => {
                   <img
                     className="cardImg"
                     alt="Post Image"
-                    src={require("../../images/" + post.blogImage)}
+                    src="https://sunrisehouse.com/wp-content/uploads/2016/12/mood-disorders-400x267.jpg"
                   />
                 </div>
               </NavLink>

@@ -28,7 +28,7 @@ are functioning within the healthy range for the general population.</h3>
     {
       return(<div className="common">
       <h2>Mild</h2>
-      <img src={mild} alt="mild-img"></img>
+      <img src={mild} className="healthyimg" alt="mild-img"></img>
       <br></br>
       <br></br>
       <h2>Your Result:</h2>
@@ -40,7 +40,7 @@ are functioning within the healthy range for the general population.</h3>
     {
       return(<div className="common">
       <h2>Moderate</h2>
-      <img src={Moderate} alt="moderate-img"></img>
+      <img src={Moderate} className="healthyimg" alt="moderate-img"></img>
       <br></br>
       <br></br>
       <h2>Your Result:</h2>
@@ -50,7 +50,7 @@ are functioning within the healthy range for the general population.</h3>
     else{
       return(<div className="common">
       <h2>Severe</h2>
-      <img src={Severe} alt="severe-img"></img>
+      <img src={Severe} className="healthyimg" alt="severe-img"></img>
       <br></br>
       <br></br>
       <h2>Your Result:</h2>
