@@ -19,3 +19,15 @@ So we are here with an idea of developing an application platform soothe
 ## Getting Started 👨‍💻
 
 ### Setup the repository to your local environment.
+
+1. `fork` the repository - Creates a replica of repository to your local environment.
+2. Clone the repository using `git clone https://github.com/SiddheshShinde-tech/Soothe2.0` - Downloads all repo files to your machine.
+3. `cd Soothe2.0` - Takes you to the root directory of the project.
+
+## Frontend ⚛️
+
+Following are the steps to run the frontend of the Soothe2.0 on your local.
+
+1. Run `npm install`. It will install all the required packages and dependencies.
+2. Run `npm start` to run the server.
+3. Navigate to [http://localhost:3000](http://localhost:3000) to view it in the browser.
