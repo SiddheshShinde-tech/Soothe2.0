@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: soothe-8075f.web.app
-Token: 2944c913b6034161a8442ef2c3cce11344778de66ca057101133baf992fce117
